@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>FinPilot | Profile</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="sidebar-logo">FinPilot</h2>
+        <nav class="nav">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="profile.html" class="nav-item active">Profile</a>
+            <a href="tracker.html" class="nav-item">Expenses</a>
+            <a href="goals.html" class="nav-item">Goals</a>
+            <a href="investments.html" class="nav-item">Investments</a>
+            <a href="chatbot.html" class="nav-item">Chatbot</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button class="btn-logout">Logout</button>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <h1>Profile Setup</h1>
+            <div class="user-info">
+                <span>User</span>
+                <div class="avatar">A</div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <!-- STEP INDICATOR -->
+            <div class="steps">
+                <div class="step active">Personal</div>
+                <div class="step">Financial</div>
+                <div class="step">Knowledge</div>
+                <div class="step">Dependents</div>
+            </div>
+
+            <!-- FORM CARD -->
+            <div class="card form-card">
+
+                <!-- STEP 1 -->
+                <div class="form-step active">
+                    <h3>Personal Details</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input type="number" placeholder="25" />
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input type="text" placeholder="India" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Marital Status</label>
+                        <select>
+                            <option>Single</option>
+                            <option>Married</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="form-step">
+                    <h3>Financial Details</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Monthly Income</label>
+                            <input type="number" placeholder="₹50,000" />
+                        </div>
+                        <div class="form-group">
+                            <label>Monthly Expenses</label>
+                            <input type="number" placeholder="₹20,000" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Total Debt (EMI)</label>
+                        <input type="number" placeholder="₹10,000" />
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="form-step">
+                    <h3>Investment Knowledge</h3>
+
+                    <div class="form-group">
+                        <label>Experience Level</label>
+                        <select>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Reaction to Market Loss</label>
+                        <select>
+                            <option>Very Uncomfortable</option>
+                            <option>Neutral</option>
+                            <option>Comfortable</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- STEP 4 -->
+                <div class="form-step">
+                    <h3>Family Dependence</h3>
+
+                    <div class="form-group">
+                        <label>Number of Dependents</label>
+                        <select>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tax Regime</label>
+                        <select>
+                            <option>Old Regime</option>
+                            <option>New Regime</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="form-actions">
+                    <button class="btn-secondary">Back</button>
+                    <button class="btn-primary">Next</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+</div>
+<script src="js/common.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>FinPilot | Goals</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="sidebar-logo">FinPilot</h2>
+        <nav class="nav">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+            <a href="tracker.html" class="nav-item">Expenses</a>
+            <a href="goals.html" class="nav-item active">Goals</a>
+            <a href="investments.html" class="nav-item">Investments</a>
+            <a href="chatbot.html" class="nav-item">Chatbot</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button class="btn-logout">Logout</button>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <h1>Financial Goals</h1>
+            <div class="user-info">
+                <span>User</span>
+                <div class="avatar">A</div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <!-- HEADER ACTION -->
+            <div class="page-header">
+                <h2>Your Goals</h2>
+                <button class="btn-primary">+ Add Goal</button>
+            </div>
+
+            <!-- GOALS GRID -->
+            <div class="goals-grid">
+
+                <!-- GOAL CARD -->
+                <div class="card goal-card high">
+                    <div class="goal-header">
+                        <h3>Emergency Fund</h3>
+                        <span class="badge high">High</span>
+                    </div>
+
+                    <p class="goal-meta">Target: ₹3,00,000 · 12 months</p>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+
+                    <p class="goal-progress">₹1,20,000 saved</p>
+                </div>
+
+                <div class="card goal-card medium">
+                    <div class="goal-header">
+                        <h3>Buy a Car</h3>
+                        <span class="badge medium">Medium</span>
+                    </div>
+
+                    <p class="goal-meta">Target: ₹8,00,000 · 3 years</p>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 25%"></div>
+                    </div>
+
+                    <p class="goal-progress">₹2,00,000 saved</p>
+                </div>
+
+                <div class="card goal-card low">
+                    <div class="goal-header">
+                        <h3>Travel Fund</h3>
+                        <span class="badge low">Low</span>
+                    </div>
+
+                    <p class="goal-meta">Target: ₹1,50,000 · 18 months</p>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+
+                    <p class="goal-progress">₹90,000 saved</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/goals.js"></script>
+
+</body>
+</html>

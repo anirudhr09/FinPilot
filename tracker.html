@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>FinPilot | Expense Tracker</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="sidebar-logo">FinPilot</h2>
+        <nav class="nav">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+            <a href="tracker.html" class="nav-item active">Expenses</a>
+            <a href="goals.html" class="nav-item">Goals</a>
+            <a href="investments.html" class="nav-item">Investments</a>
+            <a href="chatbot.html" class="nav-item">Chatbot</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button class="btn-logout">Logout</button>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <h1>Expense Tracker</h1>
+            <div class="user-info">
+                <span>User</span>
+                <div class="avatar">A</div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <!-- SUMMARY CARDS -->
+            <div class="summary-grid">
+                <div class="card summary-card income">
+                    <h4>Monthly Income</h4>
+                    <p class="amount">₹50,000</p>
+                </div>
+
+                <div class="card summary-card expense">
+                    <h4>Monthly Expenses</h4>
+                    <p class="amount">₹32,000</p>
+                </div>
+
+                <div class="card summary-card savings">
+                    <h4>Savings</h4>
+                    <p class="amount">₹18,000</p>
+                </div>
+            </div>
+
+            <!-- MAIN GRID -->
+            <div class="tracker-grid">
+
+                <!-- LEFT -->
+                <div class="card">
+                    <h3>Expense Breakdown</h3>
+                    <div class="chart-placeholder">
+                        Chart goes here
+                    </div>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Recent Transactions</h3>
+                        <button class="btn-primary small">+ Add</button>
+                    </div>
+
+                    <ul class="transaction-list">
+                        <li>
+                            <span>🍔 Food</span>
+                            <span class="negative">-₹500</span>
+                        </li>
+                        <li>
+                            <span>🏠 Rent</span>
+                            <span class="negative">-₹15,000</span>
+                        </li>
+                        <li>
+                            <span>💼 Salary</span>
+                            <span class="positive">+₹50,000</span>
+                        </li>
+                        <li>
+                            <span>🎁 Gift</span>
+                            <span class="positive">+₹2,000</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+<script src="js/common.js"></script>
+<script src="js/tracket.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>FinPilot | Investments</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2 class="sidebar-logo">FinPilot</h2>
+        <nav class="nav">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="profile.html" class="nav-item">Profile</a>
+            <a href="tracker.html" class="nav-item">Expenses</a>
+            <a href="goals.html" class="nav-item">Goals</a>
+            <a href="investments.html" class="nav-item active">Investments</a>
+            <a href="chatbot.html" class="nav-item">Chatbot</a>
+        </nav>
+        <div class="sidebar-footer">
+            <button class="btn-logout">Logout</button>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <h1>Investment Insights</h1>
+            <div class="user-info">
+                <span>User</span>
+                <div class="avatar">A</div>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <!-- RISK + ALLOCATION -->
+            <div class="invest-grid">
+
+                <div class="card">
+                    <h3>Your Risk Profile</h3>
+
+                    <div class="risk-meter">
+                        <div class="risk-fill" style="width: 65%"></div>
+                    </div>
+
+                    <p class="risk-label">Moderate Risk (Score: 65)</p>
+                </div>
+
+                <div class="card">
+                    <h3>Asset Allocation</h3>
+
+                    <ul class="allocation-list">
+                        <li><span>Equity</span><span>60%</span></li>
+                        <li><span>Debt</span><span>25%</span></li>
+                        <li><span>Gold</span><span>10%</span></li>
+                        <li><span>Cash</span><span>5%</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- SIP vs LUMP SUM -->
+            <div class="card mt-20">
+                <h3>Investment Strategy</h3>
+
+                <div class="strategy-grid">
+                    <div class="strategy active">
+                        <h4>SIP</h4>
+                        <p>Recommended for stable long-term goals</p>
+                    </div>
+
+                    <div class="strategy">
+                        <h4>Lump Sum</h4>
+                        <p>Best when market corrections occur</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GOAL MAPPING -->
+            <div class="card mt-20">
+                <h3>Goal-wise Allocation</h3>
+
+                <table class="allocation-table">
+                    <thead>
+                        <tr>
+                            <th>Goal</th>
+                            <th>Monthly SIP</th>
+                            <th>Risk Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Emergency Fund</td>
+                            <td>₹8,000</td>
+                            <td>Low</td>
+                        </tr>
+                        <tr>
+                            <td>Car</td>
+                            <td>₹12,000</td>
+                            <td>Moderate</td>
+                        </tr>
+                        <tr>
+                            <td>Travel</td>
+                            <td>₹5,000</td>
+                            <td>High</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+<script src="js/common.js"></script>
+<script src="js/investments.js"></script>
+</body>
+</html>
